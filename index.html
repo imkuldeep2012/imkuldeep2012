@@ -2,40 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <title>Kuldeep Pathak</title>
 </head>
 <body>
 
-    <header>
-        <h1>Kuldeep Pathak</h1>
-        <p>Computer Science Student | Machine Learning Enthusiast</p>
-    </header>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Your Name</a>
+    </div>
+</nav>
 
-    <section class="projects">
+<!-- About Me Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>About Me</h2>
+                <p>Your introduction and bio go here.</p>
+            </div>
+            <!-- Add an image of yourself -->
+            <div class="col-lg-6">
+                <img src="path/to/your/image.jpg" alt="Your Name" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
         <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#">View Project</a>
+        <!-- Add your project cards here -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="path/to/project/image.jpg" class="card-img-top" alt="Project Name">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Name</h5>
+                        <p class="card-text">Project description goes here.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
         </div>
+    </div>
+</section>
 
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="#">View Project</a>
-        </div>
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2>Skills</h2>
+        <!-- Add your skills list here -->
+        <ul>
+            <li>Skill 1</li>
+            <li>Skill 2</li>
+            <!-- Add more skills as needed -->
+        </ul>
+    </div>
+</section>
 
-        <!-- Add more projects as needed -->
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Email: your@email.com</p>
+        <!-- Add more contact information as needed -->
+    </div>
+</section>
 
-    </section>
-
-    <footer>
-        &copy; 2023 Kuldeep Pathak
-    </footer>
-
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
