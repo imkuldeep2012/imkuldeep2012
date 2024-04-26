@@ -10964,3 +10964,45 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-list li {
+  margin: 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.skills-list li.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.interests-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-reads {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.favorite-reads li {
+  margin-bottom: 5px;
+}
+
+/* Add more CSS styles as needed for styling and layout */
+.hidden {
+  display: none;
+}
+
+/* Add more CSS styles as needed for styling and layout */

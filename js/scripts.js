@@ -32,3 +32,24 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var skills = document.querySelectorAll('.skills-list li');
+    var delay = 100;
+
+    skills.forEach(function(skill) {
+        setTimeout(function() {
+            skill.classList.add('visible');
+        }, delay);
+        delay += 300; // Increase the delay for each skill
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    var readMoreBtn = document.querySelector('.read-more');
+    var fullDescription = document.querySelector('.full-description');
+
+    readMoreBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        fullDescription.classList.remove('hidden');
+        readMoreBtn.style.display = 'none';
+    });
+});
