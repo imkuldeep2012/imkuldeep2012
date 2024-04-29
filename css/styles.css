@@ -8173,6 +8173,7 @@ textarea.form-control-lg {
 .bg-body {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
+ 
 }
 
 .bg-transparent {
@@ -10823,12 +10824,15 @@ textarea.form-control-lg {
 body {
   padding-top: 3.375rem;
   color: #6c757d;
+ 
 }
 
 @media (min-width: 992px) {
   body {
     padding-top: 0;
     padding-left: 17rem;
+    
+
   }
 }
 h1, .h1,
@@ -11004,5 +11008,6 @@ section.resume-section .resume-section-content {
 .hidden {
   display: none;
 }
+
 
 /* Add more CSS styles as needed for styling and layout */
