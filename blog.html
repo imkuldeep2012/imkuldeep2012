@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post with Theme Switcher and Icon</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .dark-mode {
+            background-color: #181818;
+            color: #ffffff;
+        }
+
+        .light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .divider {
+            height: 4px;
+            width: 50px;
+            background-color: #f29f64;
+            margin: 10px 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .intro-text {
+            margin-top: 10px;
+        }
+
+        /* Theme toggle button */
+        .theme-toggle-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #f29f64;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+
+        .theme-toggle-btn:hover {
+            background-color: #f29f64;
+        }
+
+        /* SVG icon styling */
+        .theme-toggle-btn svg {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+        /* Center the header and give it a unique look */
+.header {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 20px; /* Add some spacing from the top */
+   
+    padding: 20px; /* Space inside the header */
+    border-bottom: 3px solid #f29f64; /* Add a nice border below */
+}
+
+/* Style the unique title */
+.header h1 {
+    font-size: 3rem; /* Make the title large */
+    font-weight: bold; /* Make the text bold */
+    color: #f29f64; /* Set a unique color */
+    font-family: 'cursive', sans-serif; /* Add a modern font */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+}
+
+    </style>
+</head>
+<body class="dark-mode"> <!-- Start with dark mode by default -->
+
+    <!-- Toggle Button for Theme with SVG Icon -->
+    <button class="theme-toggle-btn" id="theme-toggle">
+        <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" width="24px" height="24px">
+            <path d="m7.05 5.26 1.57-1.12s-1.11 4.67 2.06 8.78 8.02 4.43 8.02 4.43l-1.33 1.26c-3.74 2.83-9.25 2.13-12.04-1.54S3.31 8.09 7.06 5.27M4.05 18.03c3.35 4.42 9.67 5.29 14.1 1.95a9.975 9.975 0 0 0 3.19-4.11c-3.45.43-7.02-.93-9.27-3.9s-2.59-6.76-1.24-9.96A10.05 10.05 0 0 0 6 3.96a10.02 10.02 0 0 0-1.96 14.06zM20.17 4.5H14.5c-1.09 0-1.09-1.66 0-1.67h5.67c1.09 0 1.09 1.66 0 1.67zm-3 4h-4c-1.09 0-1.09-1.66 0-1.67h4c1.09 0 1.09 1.66 0 1.67zm4 4.17h-5c-1.09 0-1.09-1.66 0-1.67h5c1.09 0 1.09 1.66 0 1.67z"></path>
+        </svg>
+        
+    </button>
+    <div class="header">
+        <h1>My Blog Posts</h1>
+    </div>
+    
+    <!-- <div class="content">
+        <h1>Machine Learning Roadmap</h1>
+        <div class="divider"></div>
+
+        <p><strong>Written by: Kuldeep</strong> </p>
+        <p><strong>Date: 15/09/2024</strong> </p>
+
+        <h2>Introduction</h2>
+        <div class="divider"></div>
+        <p class="intro-text">
+            Draw the reader into your blog post and get them to identify with a problem. 
+            Take time elaborating on the problem. Let your readers know that you will be helping them fix this problem.
+        </p>
+        <p>Transition into the body where you’ll show them how.</p>
+
+        <h2>Body</h2>
+        <div class="divider"></div>
+        <p>
+            This is where the body of your blog post goes.
+        </p>
+    </div> -->
+    
+    <div class="content">
+        <h1>Machine Learning Roadmap</h1>
+        <div class="divider"></div>
+
+        <p><strong>Written by: Kuldeep</strong> </p>
+        <p><strong>Date: 15/09/2024</strong> </p>
+        <h2>Mathematical Prerequisites</h2>
+        <div class="divider"></div>
+        <p>- Linear Algebra: Vectors, matrices, matrix multiplication.</p>
+        <p>- Probability & Statistics: Basics of probability, distributions, mean, variance.</p>
+        <p>- Optimization: Gradient descent, cost functions, optimization techniques.</p>
+
+        <h2>Programming Basics</h2>
+        <div class="divider"></div>
+        <p>- Python: Learn Python basics, libraries like NumPy, Pandas, Matplotlib.</p>
+        <p>- Data Handling: Loading, cleaning, and preprocessing datasets.</p>
+
+        <h2>Machine Learning Algorithms</h2>
+        <div class="divider"></div>
+        <p><strong>Supervised Learning:</strong></p>
+        <p>- Linear Regression: Understand basic linear models and predictions.</p>
+        <p>- Logistic Regression: Learn classification through logistic functions.</p>
+        <p>- Support Vector Machines (SVM): Classification and margin maximization.</p>
+
+        <p><strong>Neural Networks:</strong></p>
+        <p>- CNN (Convolutional Neural Networks): Image classification and processing.</p>
+        <p>- RNN (Recurrent Neural Networks): For sequence data like time series or NLP.</p>
+
+        <p><strong>Unsupervised Learning:</strong></p>
+        <p>- K-Means Clustering: Clustering algorithms to group data without labels.</p>
+
+        <h2>Model Evaluation</h2>
+        <div class="divider"></div>
+        <p>- Metrics: Accuracy, precision, recall, F1-score.</p>
+        <p>- Cross-validation: Train-test split, k-fold cross-validation.</p>
+
+        <h2>Deep Learning Frameworks</h2>
+        <div class="divider"></div>
+        <p>- Learn popular frameworks: TensorFlow, PyTorch.</p>
+
+        <h2>Projects and Case Studies</h2>
+        <div class="divider"></div>
+        <p>- Build hands-on projects using datasets like MNIST, CIFAR-10, or custom datasets.</p>
+    </div>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Theme toggle function
+        toggleButton.addEventListener('click', () => {
+            if (body.classList.contains('dark-mode')) {
+                body.classList.replace('dark-mode', 'light-mode');
+                toggleButton.innerHTML = `<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" width="24px" height="24px">
+                    <path d="M12 8c-5.23.02-5.23 7.98 0 8 5.23-.02 5.23-7.98 0-8zm0 6.33c-3.03.04-3.03-4.71 0-4.67 3.03-.04 3.03 4.71 0 4.67zm0-8a.83.83 0 0 1-.83-.83v-3c.03-1.1 1.64-1.1 1.67 0v3a.83.83 0 0 1-.83.83zm0 16.06a.83.83 0 0 1-.83-.83v-3c.03-1.1 1.64-1.1 1.67 0v3a.83.83 0 0 1-.83.83zM17.7 12a.83.83 0 0 1 .83-.83h3c1.1.03 1.1 1.64 0 1.67h-3a.83.83 0 0 1-.83-.83zM1.64 12a.83.83 0 0 1 .83-.83h3c1.1.03 1.1 1.64 0 1.67h-3a.83.83 0 0 1-.83-.83zm14.37-4.02a.827.827 0 0 1 0-1.18l2.12-2.12c.8-.76 1.94.38 1.18 1.18l-2.12 2.12c-.33.33-.85.33-1.18 0zM4.66 19.33a.827.827 0 0 1 0-1.18l2.12-2.12c.8-.76 1.94.38 1.18 1.18l-2.12 2.12c-.33.33-.85.33-1.18 0zm11.38-3.31c.33-.33.85-.33 1.18 0l2.12 2.12c.76.8-.38 1.94-1.18 1.18l-2.12-2.12a.827.827 0 0 1 0-1.18zM4.68 4.67c.33-.33.85-.33 1.18 0l2.12 2.12c.76.8-.38 1.94-1.18 1.18L4.68 5.85a.827.827 0 0 1 0-1.18z"></path>
+                    </svg>`;
+            } else {
+                body.classList.replace('light-mode', 'dark-mode');
+                toggleButton.innerHTML = `<svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" width="24px" height="24px">
+                    <path d="m7.05 5.26 1.57-1.12s-1.11 4.67 2.06 8.78 8.02 4.43 8.02 4.43l-1.33 1.26c-3.74 2.83-9.25 2.13-12.04-1.54S3.31 8.09 7.06 5.27M4.05 18.03c3.35 4.42 9.67 5.29 14.1 1.95a9.975 9.975 0 0 0 3.19-4.11c-3.45.43-7.02-.93-9.27-3.9s-2.59-6.76-1.24-9.96A10.05 10.05 0 0 0 6 3.96a10.02 10.02 0 0 0-1.96 14.06zM20.17 4.5H14.5c-1.09 0-1.09-1.66 0-1.67h5.67c1.09 0 1.09 1.66 0 1.67zm-3 4h-4c-1.09 0-1.09-1.66 0-1.67h4c1.09 0 1.09 1.66 0 1.67zm4 4.17h-5c-1.09 0-1.09-1.66 0-1.67h5c1.09 0 1.09 1.66 0 1.67z"></path>
+                    </svg> `;
+            }
+        });
+    </script>
+</body>
+</html>
